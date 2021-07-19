@@ -1,7 +1,7 @@
 {
-  "name": "axon-frontend-coding-challenge",
+  "name": "frontend-coding-challenge",
   "version": "1.0.0",
-  "description": "Axon frontend coding challenge",
+  "description": "Frontend coding challenge",
   "main": "index.js",
   "scripts": {
     "test": "jest --config ./jest.config.js",
