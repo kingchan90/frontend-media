@@ -1,0 +1,57 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "import/extensions": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/alt-text": "off",
+    "jsx-a11y/no-noninteractive-element-interactions": "off",
+    "jsx-a11y/href-no-hash": "off",
+    "jsx-a11y/no-static-element-interactions": "off",
+    "jsx-a11y/label-has-for": "off",
+    "no-underscore-dangle": "off",
+    "lines-between-class-members": "off",
+    "max-len": "off",
+    "comma-dangle": "off",
+    "no-plusplus": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "react/self-closing-comp": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-array-index-key": "off",
+    "react/no-danger": "off",
+    "react/prefer-stateless-function": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-curly-newline": "off",
+    "object-shorthand": "off",
+    "arrow-body-style": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-multi-comp": "off",
+    "react/sort-comp": "off",
+    "react/jsx-wrap-multilines": "off",
+    "react/require-default-props": "off",
+    "no-confusing-arrow": "off",
+    "arrow-parens": "off",
+    "no-mixed-operators": "off",
+    "class-methods-use-this": "off",
+    "padded-blocks": 0,
+    "jsx-a11y/click-events-have-key-events": "off"
+  },
+  "globals": {
+    "__isBrowser__": true
+  }
+}

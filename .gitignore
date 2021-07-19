@@ -1,0 +1,16 @@
+yarn-debug.log
+yarn-error.log
+/node_modules
+
+.DS_Store
+.idea
+.project
+.vscode
+Thumbs.db
+
+*.swp
+*.swo
+
+.env
+
+__snapshots__/

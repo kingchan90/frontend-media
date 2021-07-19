@@ -1,0 +1,70 @@
+.media-item {
+  background-color: $color-light-gray;
+  height: 100%;
+  margin: 15px 0;
+
+  > .inner {
+    background-color: $color-white;
+    padding: .5rem;
+    cursor: pointer;
+  }
+  .img-wrapper {
+    position: relative;
+    display: block;
+    padding-top: 85%;
+  }
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin: .5rem;
+}
+
+.username {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
+.social {
+  display: flex;
+  padding: .5rem 0;
+}
+.social-item {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 5px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:first-child {
+    margin-right: auto;
+  }
+}
+
+.social-link {
+  transition: color .2s linear;
+  color: $color-light-gray;
+
+  &:hover {
+    color: $color-blue;
+    text-decoration: none;
+  }
+
+  [class^="icon-"] {
+    margin-right: 5px;
+  }
+}

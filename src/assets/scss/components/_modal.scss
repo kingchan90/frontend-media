@@ -1,0 +1,176 @@
+//
+//  Modal default
+//  ---------------------------------------------
+#modal-root {
+  z-index: $z-popup;
+  position: fixed;
+}
+.modal-bg {
+  background: rgba(0,0,0, .5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.modal-close-area {
+  display: flex;
+  justify-content: flex-end;
+}
+.close {
+  width: 14px;
+  height: 14px;
+}
+.modal-close-event {
+  cursor: pointer;
+  padding: 5px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+.modal-dialog {
+  position: relative;
+  width: auto;
+  margin: .5rem;
+
+  @media screen and (min-width: $SM_UP) {
+    width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+.modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  width: 100%;
+  border-radius: .3rem;
+  background-color: $color-white;
+  min-height: 300px;
+}
+
+//
+//  Loading
+//  ---------------------------------------------
+
+.loading-popup {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: $color-white;
+  opacity: 0.6;
+  z-index: 11111;
+  .loading, .loading-logo {
+    top: 50%;
+    position: absolute;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+//
+//  Modal Error
+//  ---------------------------------------------
+
+.new-error-popup-dialog {
+  width: 80%;
+  .error-crossmark {
+    width: 80px;
+    height: 115px;
+    margin: 0 auto;
+
+    .cross-icon {
+      width: 80px;
+      height: 80px;
+      position: relative;
+      border-radius: 50%;
+      box-sizing: content-box;
+      border: $cross-icon--border $color-red;
+
+      &::before {
+        top: 3px;
+        left: -2px;
+        width: 30px;
+        transform-origin: 100% 50%;
+        border-radius: 100px 0 0 100px;
+      }
+
+      &::after {
+        top: 0;
+        left: 30px;
+        width: 60px;
+        transform-origin: 0 50%;
+        border-radius: 0 100px 100px 0;
+        animation: rotate-circle 4.25s ease-in;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        height: 100px;
+        position: absolute;
+        background: $color-white;
+        transform: rotate(-45deg);
+      }
+
+      .icon-cross-line {
+        height: 5px;
+        background-color: $color-coral;
+        display: block;
+        border-radius: 2px;
+        position: absolute;
+        z-index: 10;
+
+        &.line-left {
+          top: 38px;
+          left: 20px;
+          width: 40px;
+          transform: rotate(45deg);
+          animation: icon-line-left 0.75s;
+        }
+
+        &.line-right {
+          top: 38px;
+          right: 20px;
+          width: 40px;
+          transform: rotate(-45deg);
+          animation: icon-line-right 0.75s;
+        }
+      }
+
+      .icon-circle {
+        top: -4px;
+        left: -4px;
+        z-index: 10;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        position: absolute;
+        box-sizing: content-box;
+        border: $cross-icon--border $color-coral;
+      }
+
+      .icon-fix {
+        top: 8px;
+        width: 5px;
+        left: 26px;
+        z-index: 1;
+        height: 85px;
+        position: absolute;
+        transform: rotate(-45deg);
+        background-color: $color-white;
+      }
+    }
+  }
+}

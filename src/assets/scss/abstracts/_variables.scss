@@ -1,0 +1,45 @@
+$base-url: '../../assets/';
+//
+//  Colors
+//  ---------------------------------------------
+
+$color-white: #ffffff;
+$color-coral: rgb(208, 96, 121);
+$color-red: rgba(221, 0, 27, 0.9);
+$color-gray: #808080;
+$color-light-gray: #dedede;
+$color-blue: #1C5687;
+
+//
+//  Media
+//  ---------------------------------------------
+$xs: 0;
+$XL_UP: '1200px';
+$XL_DOWN: '1199.98px';
+$LG_UP: '992px';
+$LG_DOWN: '991.98px';
+$MD_UP: '768px';
+$MD_DOWN: '767.98px';
+$SM_UP: '576px';
+$SM_DOWN: '575.98px';
+
+
+//
+//  Modal
+//  ---------------------------------------------
+
+$modal--bg-color: rgba(255,255,255, .5);
+$cross-icon--border: 4px solid;
+
+//
+//  Z-index
+//  ---------------------------------------------
+$z-popup: 1050;
+
+
+
+//
+//  Button
+//  ---------------------------------------------
+
+$btn--border-radius: 8px;

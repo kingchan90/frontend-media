@@ -1,0 +1,65 @@
+@keyframes rotate-circle {
+  0% {
+    transform: rotate(-45deg);
+  }
+  5% {
+    transform: rotate(-45deg);
+  }
+  12% {
+    transform: rotate(-405deg);
+  }
+  100% {
+    transform: rotate(-405deg);
+  }
+}
+
+@keyframes icon-line-left {
+  0% {
+    width: 0;
+    left: 20px;
+    top: 38px;
+  }
+  54% {
+    width: 0;
+    left: 30px;
+    top: 38px;
+  }
+  70% {
+    width: 20px;
+    left: 20px;
+    top: 38px;
+  }
+  84% {
+    width: 30px;
+    left: 20px;
+    top: 38px;
+  }
+  100% {
+    width: 40px;
+    left: 20px;
+    top: 38px;
+  }
+}
+
+@keyframes icon-line-right {
+  0% {
+    width: 0;
+    right: 20px;
+    top: 38px;
+  }
+  65% {
+    width: 0;
+    right: 20px;
+    top: 38px;
+  }
+  84% {
+    width: 35px;
+    right: 20px;
+    top: 38px;
+  }
+  100% {
+    width: 40px;
+    right: 20px;
+    top: 38px;
+  }
+}
